@@ -53,7 +53,6 @@ pnpm dev
 
 **NextJS**:
 **NextUI**:
-**Redux**:
 
 ## Coming soon
 - [] backend service starter (nestjs)
