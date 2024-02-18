@@ -1,0 +1,5 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@vercel/style-guide/typescript/tsconfig.node20.json",
+  "display": "Node"
+}

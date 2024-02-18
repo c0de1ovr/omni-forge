@@ -1,0 +1,345 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`navbar NavbarContent should match snapshot 1`] = `
+<div
+  data-testid="NavbarContent"
+>
+  <div
+    data-testid="NavbarBrand"
+  >
+    <a
+      class="flex justify-start items-center gap-1"
+      href="/"
+    >
+      <svg
+        fill="none"
+        height="36"
+        viewBox="0 0 32 32"
+        width="36"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M17.6482 10.1305L15.8785 7.02583L7.02979 22.5499H10.5278L17.6482 10.1305ZM19.8798 14.0457L18.11 17.1983L19.394 19.4511H16.8453L15.1056 22.5499H24.7272L19.8798 14.0457Z"
+          fill="currentColor"
+          fill-rule="evenodd"
+        />
+      </svg>
+      <p
+        class="font-bold text-inherit"
+      >
+        ACME
+      </p>
+    </a>
+  </div>
+  <ul
+    class="hidden lg:flex gap-4 justify-start ml-2"
+  >
+    <div
+      id="NavbarItem"
+    >
+      <a
+        class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-medium text-foreground no-underline hover:opacity-80 active:opacity-disabled transition-opacity data-[active=true]:text-primary data-[active=true]:font-medium"
+        color="foreground"
+        href="/"
+      >
+        Home
+      </a>
+    </div>
+    <div
+      id="NavbarItem"
+    >
+      <a
+        class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-medium text-foreground no-underline hover:opacity-80 active:opacity-disabled transition-opacity data-[active=true]:text-primary data-[active=true]:font-medium"
+        color="foreground"
+        href="/docs"
+      >
+        Docs
+      </a>
+    </div>
+    <div
+      id="NavbarItem"
+    >
+      <a
+        class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-medium text-foreground no-underline hover:opacity-80 active:opacity-disabled transition-opacity data-[active=true]:text-primary data-[active=true]:font-medium"
+        color="foreground"
+        href="/pricing"
+      >
+        Pricing
+      </a>
+    </div>
+    <div
+      id="NavbarItem"
+    >
+      <a
+        class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-medium text-foreground no-underline hover:opacity-80 active:opacity-disabled transition-opacity data-[active=true]:text-primary data-[active=true]:font-medium"
+        color="foreground"
+        href="/blog"
+      >
+        Blog
+      </a>
+    </div>
+    <div
+      id="NavbarItem"
+    >
+      <a
+        class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-medium text-foreground no-underline hover:opacity-80 active:opacity-disabled transition-opacity data-[active=true]:text-primary data-[active=true]:font-medium"
+        color="foreground"
+        href="/about"
+      >
+        About
+      </a>
+    </div>
+  </ul>
+</div>
+`;
+
+exports[`navbar NavbarContent should match snapshot 2`] = `
+<div
+  data-testid="NavbarContent"
+>
+  <a
+    aria-label="Github"
+    class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-medium text-primary no-underline hover:opacity-80 active:opacity-disabled transition-opacity"
+    href="https://github.com/nextui-org/nextui"
+    rel="noopener noreferrer"
+    role="link"
+    tabindex="0"
+    target="_blank"
+  >
+    <svg
+      class="text-default-500"
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+    >
+      <path
+        clip-rule="evenodd"
+        d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+        fill="currentColor"
+        fill-rule="evenodd"
+      />
+    </svg>
+  </a>
+  <label
+    aria-label="Switch to light mode"
+    class="group relative max-w-fit inline-flex items-center justify-start touch-none tap-highlight-transparent px-px transition-opacity hover:opacity-80 cursor-pointer"
+  >
+    <div
+      style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
+    >
+      <input
+        aria-labelledby=":r0:"
+        role="switch"
+        type="checkbox"
+        value=""
+      />
+    </div>
+    <div
+      aria-hidden="true"
+      class="relative flex-shrink-0 overflow-hidden outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background group-data-[selected=true]:text-primary-foreground transition-background w-auto h-auto bg-transparent rounded-lg flex items-center justify-center group-data-[selected=true]:bg-transparent !text-default-500 pt-px px-0 mx-0"
+    >
+      <svg
+        aria-hidden="true"
+        focusable="false"
+        height="22"
+        role="presentation"
+        viewBox="0 0 24 24"
+        width="22"
+      >
+        <g
+          fill="currentColor"
+        >
+          <path
+            d="M19 12a7 7 0 11-7-7 7 7 0 017 7z"
+          />
+          <path
+            d="M12 22.96a.969.969 0 01-1-.96v-.08a1 1 0 012 0 1.038 1.038 0 01-1 1.04zm7.14-2.82a1.024 1.024 0 01-.71-.29l-.13-.13a1 1 0 011.41-1.41l.13.13a1 1 0 010 1.41.984.984 0 01-.7.29zm-14.28 0a1.024 1.024 0 01-.71-.29 1 1 0 010-1.41l.13-.13a1 1 0 011.41 1.41l-.13.13a1 1 0 01-.7.29zM22 13h-.08a1 1 0 010-2 1.038 1.038 0 011.04 1 .969.969 0 01-.96 1zM2.08 13H2a1 1 0 010-2 1.038 1.038 0 011.04 1 .969.969 0 01-.96 1zm16.93-7.01a1.024 1.024 0 01-.71-.29 1 1 0 010-1.41l.13-.13a1 1 0 011.41 1.41l-.13.13a.984.984 0 01-.7.29zm-14.02 0a1.024 1.024 0 01-.71-.29l-.13-.14a1 1 0 011.41-1.41l.13.13a1 1 0 010 1.41.97.97 0 01-.7.3zM12 3.04a.969.969 0 01-1-.96V2a1 1 0 012 0 1.038 1.038 0 01-1 1.04z"
+          />
+        </g>
+      </svg>
+    </div>
+  </label>
+  <div
+    data-testid="NavbarMenuToggle"
+  />
+</div>
+`;
+
+exports[`navbar NavbarMenu should match snapshot 1`] = `
+<div
+  data-testid="NavbarMenu"
+>
+  <div
+    class="group flex flex-col w-full group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)]"
+    data-filled="true"
+    data-filled-within="true"
+    data-slot="base"
+  >
+    <div
+      class="h-full flex flex-col"
+      data-slot="main-wrapper"
+    >
+      <div
+        class="relative w-full inline-flex tap-highlight-transparent flex-row items-center shadow-sm px-3 gap-3 data-[hover=true]:bg-default-200 group-data-[focus=true]:bg-default-100 h-unit-10 min-h-unit-10 rounded-medium transition-background motion-reduce:transition-none !duration-150 outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background bg-default-100"
+        data-slot="input-wrapper"
+        style="cursor: text;"
+      >
+        <div
+          class="inline-flex w-full items-center h-full box-border"
+          data-slot="inner-wrapper"
+        >
+          <svg
+            aria-hidden="true"
+            class="text-base text-default-400 pointer-events-none flex-shrink-0"
+            fill="none"
+            focusable="false"
+            height="1em"
+            role="presentation"
+            viewBox="0 0 24 24"
+            width="1em"
+          >
+            <path
+              d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+            <path
+              d="M22 22L20 20"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </svg>
+          <input
+            aria-label="Search"
+            class="w-full font-normal bg-transparent !outline-none placeholder:text-foreground-500 focus-visible:outline-none data-[has-start-content=true]:ps-1.5 data-[has-end-content=true]:pe-1.5 group-data-[has-value=true]:text-default-foreground h-full text-sm"
+            data-has-end-content="true"
+            data-has-start-content="true"
+            data-slot="input"
+            id="react-aria-:r7:"
+            placeholder="Search..."
+            type="search"
+            value=""
+          />
+          <kbd
+            class="px-1.5 py-0.5 space-x-0.5 items-center font-sans font-normal text-center text-small shadow-small bg-default-100 text-foreground-600 rounded-small hidden lg:inline-block"
+          >
+            <abbr
+              class="no-underline"
+              title="Command"
+            >
+              ⌘
+            </abbr>
+            <span>
+              K
+            </span>
+          </kbd>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="mx-4 mt-2 flex flex-col gap-2"
+  >
+    <div
+      data-testid="NavbarMenuItem"
+    >
+      <a
+        class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-large text-foreground no-underline hover:opacity-80 active:opacity-disabled transition-opacity"
+        href="#"
+        role="link"
+        tabindex="0"
+      >
+        Profile
+      </a>
+    </div>
+    <div
+      data-testid="NavbarMenuItem"
+    >
+      <a
+        class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-large text-foreground no-underline hover:opacity-80 active:opacity-disabled transition-opacity"
+        href="#"
+        role="link"
+        tabindex="0"
+      >
+        Dashboard
+      </a>
+    </div>
+    <div
+      data-testid="NavbarMenuItem"
+    >
+      <a
+        class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-large text-primary no-underline hover:opacity-80 active:opacity-disabled transition-opacity"
+        href="#"
+        role="link"
+        tabindex="0"
+      >
+        Projects
+      </a>
+    </div>
+    <div
+      data-testid="NavbarMenuItem"
+    >
+      <a
+        class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-large text-foreground no-underline hover:opacity-80 active:opacity-disabled transition-opacity"
+        href="#"
+        role="link"
+        tabindex="0"
+      >
+        Team
+      </a>
+    </div>
+    <div
+      data-testid="NavbarMenuItem"
+    >
+      <a
+        class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-large text-foreground no-underline hover:opacity-80 active:opacity-disabled transition-opacity"
+        href="#"
+        role="link"
+        tabindex="0"
+      >
+        Calendar
+      </a>
+    </div>
+    <div
+      data-testid="NavbarMenuItem"
+    >
+      <a
+        class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-large text-foreground no-underline hover:opacity-80 active:opacity-disabled transition-opacity"
+        href="#"
+        role="link"
+        tabindex="0"
+      >
+        Settings
+      </a>
+    </div>
+    <div
+      data-testid="NavbarMenuItem"
+    >
+      <a
+        class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-large text-foreground no-underline hover:opacity-80 active:opacity-disabled transition-opacity"
+        href="#"
+        role="link"
+        tabindex="0"
+      >
+        Help & Feedback
+      </a>
+    </div>
+    <div
+      data-testid="NavbarMenuItem"
+    >
+      <a
+        class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-large text-danger no-underline hover:opacity-80 active:opacity-disabled transition-opacity"
+        href="#"
+        role="link"
+        tabindex="0"
+      >
+        Logout
+      </a>
+    </div>
+  </div>
+</div>
+`;
