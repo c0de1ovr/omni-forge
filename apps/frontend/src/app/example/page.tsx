@@ -16,8 +16,8 @@ export default async function AboutPage() {
     <div>
       <h1 className={title()}>Test Server Components</h1>
       <ul>
-        {todos.slice(0, 5).map(({ title }) => (
-          <li>{title}</li>
+        {todos.slice(0, 5).map(({ id, title }) => (
+          <li key={id}>{title}</li>
         ))}
       </ul>
     </div>
