@@ -1,3 +1,4 @@
+/* eslint-disable react/function-component-definition */
 import { Code } from '@nextui-org/code';
 import { Link } from '@nextui-org/link';
 import { Snippet } from '@nextui-org/snippet';

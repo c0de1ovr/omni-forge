@@ -1,3 +1,4 @@
+/* eslint-disable react/function-component-definition */
 import '@/theme/styles/globals.css';
 import { Link } from '@nextui-org/link';
 import clsx from 'clsx';

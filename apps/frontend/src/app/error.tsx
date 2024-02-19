@@ -1,3 +1,4 @@
+/* eslint-disable react/function-component-definition */
 'use client';
 
 import { useEffect } from 'react';

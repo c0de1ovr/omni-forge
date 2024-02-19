@@ -1,4 +1,3 @@
-import { Button } from '@nextui-org/button';
 import { Input } from '@nextui-org/input';
 import { Kbd } from '@nextui-org/kbd';
 import { Link } from '@nextui-org/link';
@@ -14,18 +13,12 @@ import {
 import { link as linkStyles } from '@nextui-org/theme';
 import clsx from 'clsx';
 import NextLink from 'next/link';
-import {
-  TwitterIcon,
-  GithubIcon,
-  DiscordIcon,
-  HeartFilledIcon,
-  SearchIcon,
-} from '@/components/icons';
+import { GithubIcon, SearchIcon } from '@/components/icons';
 import { Logo } from '@/components/icons';
 import { ThemeSwitch } from '@/components/theme-switch';
 import { siteConfig } from '@/config/site';
 
-export function Navbar() {
+export const Navbar = () => {
   const searchInput = (
     <Input
       aria-label="Search"
@@ -106,4 +99,4 @@ export function Navbar() {
       </NavbarMenu>
     </NextUINavbar>
   );
-}
+};

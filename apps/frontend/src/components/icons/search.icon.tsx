@@ -1,6 +1,6 @@
 import { IconSvgProps } from './types';
 
-export function SearchIcon(props: IconSvgProps) {
+export const SearchIcon = (props: IconSvgProps) => {
   return (
     <svg
       aria-hidden="true"
@@ -28,4 +28,4 @@ export function SearchIcon(props: IconSvgProps) {
       />
     </svg>
   );
-}
+};

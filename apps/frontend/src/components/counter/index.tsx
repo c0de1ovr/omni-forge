@@ -4,7 +4,7 @@ import { Button } from '@nextui-org/button';
 import { useAppDispatch, useAppSelector } from '@/store';
 import { increment, selectCount } from '@/store/features/counter/counter.slice';
 
-export function Counter() {
+export const Counter = () => {
   const count = useAppSelector(selectCount);
   const dispatch = useAppDispatch();
 
@@ -13,4 +13,4 @@ export function Counter() {
       Count is {count}
     </Button>
   );
-}
+};

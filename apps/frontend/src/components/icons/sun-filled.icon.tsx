@@ -1,11 +1,11 @@
 import { IconSvgProps } from './types';
 
-export function SunFilledIcon({
+export const SunFilledIcon = ({
   size = 24,
   width,
   height,
   ...props
-}: IconSvgProps) {
+}: IconSvgProps) => {
   return (
     <svg
       aria-hidden="true"
@@ -22,4 +22,4 @@ export function SunFilledIcon({
       </g>
     </svg>
   );
-}
+};
