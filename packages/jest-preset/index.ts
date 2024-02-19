@@ -1,6 +1,6 @@
-import {Config} from 'jest'
+/* eslint-disable import/no-default-export -- default export was proposed by the maintainer of the lib itself */
 
-const config: Config= {
+const config = {
   transform: {
     '^.+\\.[tj]s$': [
       'ts-jest',
