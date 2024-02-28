@@ -35,6 +35,10 @@ module.exports = {
     'node_modules/',
   ],
   rules: {
+    'react/function-component-definition': [
+      2,
+      { namedComponents: 'arrow-function' },
+    ],
     'import/order': [
       'warn',
       {

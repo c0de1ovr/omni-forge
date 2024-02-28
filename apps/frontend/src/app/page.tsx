@@ -1,7 +1,9 @@
+/* eslint-disable react/function-component-definition */
 import { Code } from '@nextui-org/code';
 import { Link } from '@nextui-org/link';
 import { Snippet } from '@nextui-org/snippet';
 import { button as buttonStyles } from '@nextui-org/theme';
+import { Counter } from '@/components/counter';
 import { GithubIcon } from '@/components/icons';
 import { title, subtitle } from '@/components/primitives';
 import { siteConfig } from '@/config/site';
@@ -41,6 +43,7 @@ export default function Home() {
           <GithubIcon size={20} />
           GitHub
         </Link>
+        <Counter />
       </div>
 
       <div className="mt-8">
@@ -49,6 +52,9 @@ export default function Home() {
             Get started by editing <Code color="primary">app/page.tsx</Code>
           </span>
         </Snippet>
+      </div>
+      <div className="mt-8">
+        <Counter />
       </div>
     </section>
   );

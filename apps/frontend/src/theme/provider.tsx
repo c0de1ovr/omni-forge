@@ -10,7 +10,7 @@ export interface ProviderProps {
   themeProps?: ThemeProviderProps;
 }
 
-export function ThemeProvider({ children, themeProps }: ProviderProps) {
+export const ThemeProvider = ({ children, themeProps }: ProviderProps) => {
   const router = useRouter();
 
   return (
@@ -18,4 +18,4 @@ export function ThemeProvider({ children, themeProps }: ProviderProps) {
       <NextThemesProvider {...themeProps}>{children}</NextThemesProvider>
     </NextUIProvider>
   );
-}
+};

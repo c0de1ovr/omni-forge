@@ -1,3 +1,4 @@
+/* eslint-disable react/function-component-definition */
 import '@/theme/styles/globals.css';
 import { Link } from '@nextui-org/link';
 import clsx from 'clsx';
@@ -6,6 +7,7 @@ import { ReactNode } from 'react';
 import { Navbar } from '@/components/navbar';
 import { fontSans } from '@/config/fonts';
 import { siteConfig } from '@/config/site';
+import { StoreProvider } from '@/store';
 import { ThemeProvider } from '@/theme/index';
 
 export const metadata: Metadata = {
@@ -40,9 +42,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         >
           <div className="relative flex flex-col h-screen">
             <Navbar />
-            <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
-              {children}
-            </main>
+            <StoreProvider>
+              <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
+                {children}
+              </main>
+            </StoreProvider>
             <footer className="w-full flex items-center justify-center py-3">
               <Link
                 className="flex items-center gap-1 text-current"
