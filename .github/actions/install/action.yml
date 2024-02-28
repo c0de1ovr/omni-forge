@@ -14,4 +14,5 @@ runs:
         registry-url: "https://registry.npmjs.org"
         cache: "pnpm"
     - name: install dependencies
+      shell: bash
       run: pnpm install
