@@ -40,6 +40,17 @@ cd my-turborepo
 pnpm dev
 ```
 
+### Commands
+
+> These project is making use of [pnpm](https://pnpm.io/)
+
+| command | description                                  |
+| ------- | -------------------------------------------- |
+| install | install all dependencies                     |
+| lint    | linting all apps & packages                  |
+| test    | executing unit tests on all apps & packages  |
+| dev     | start develop mode on all apps & packages    |
+
 ## Useful Links
 
 **Turborepo**:
@@ -54,6 +65,10 @@ pnpm dev
 **NextJS**:
 **NextUI**:
 
-## Coming soon
+## TODO
 - [] backend service starter (nestjs)
 - [] PoC: nextjs server components and module federation
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
