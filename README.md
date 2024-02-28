@@ -56,4 +56,4 @@ pnpm dev
 
 ## Coming soon
 - [] backend service starter (nestjs)
-- [] micro-frontend composition with module federation
+- [] PoC: nextjs server components and module federation
