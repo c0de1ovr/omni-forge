@@ -1,0 +1,26 @@
+name: qualtiy-check
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+    branches:
+      - main
+
+jobs:
+  test:
+    name: unit-test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./.github/actions/install
+      - name: test monorepo
+        run: pnpm test
+
+  lint:
+    name: lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./.github/actions/install
+      - name: lint monorepo
+        run: pnpm lint
