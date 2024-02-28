@@ -5,7 +5,7 @@ Start your prototype today!
 ## Abstract
 
 Especially when you want to try something out, often it lags on time that you want to have a environment where you are guided by linting rules. Integrations can be very painful, like eslint, prettier, jest. etc.
-This project solves the problem, it provides you a blueprint to directly start prototyping without loosing code quality due to linter integration, also writing test with jest works out of the box.
+This project solves the problem, it provides you a opinionated blueprint to directly start prototyping without loosing code quality, also writing test works out of the box.
 
 ## What's inside?
 
@@ -40,6 +40,17 @@ cd my-turborepo
 pnpm dev
 ```
 
+### Commands
+
+> These project is making use of [pnpm](https://pnpm.io/)
+
+| command | description                                  |
+| ------- | -------------------------------------------- |
+| install | install all dependencies                     |
+| lint    | linting all apps & packages                  |
+| test    | executing unit tests on all apps & packages  |
+| dev     | start develop mode on all apps & packages    |
+
 ## Useful Links
 
 **Turborepo**:
@@ -54,6 +65,10 @@ pnpm dev
 **NextJS**:
 **NextUI**:
 
-## Coming soon
+## TODO
 - [] backend service starter (nestjs)
 - [] PoC: nextjs server components and module federation
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)

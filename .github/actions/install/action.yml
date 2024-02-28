@@ -1,0 +1,18 @@
+name: install
+description: set up node.js and runs install
+
+runs:
+  using: composite
+  steps:
+    - uses: pnpm/action-setup@v3
+      with:
+        version: 8
+    - name: setup node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version-file: ".nvmrc"
+        registry-url: "https://registry.npmjs.org"
+        cache: "pnpm"
+    - name: install dependencies
+      shell: bash
+      run: pnpm install
