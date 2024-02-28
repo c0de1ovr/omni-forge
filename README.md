@@ -5,7 +5,7 @@ Start your prototype today!
 ## Abstract
 
 Especially when you want to try something out, often it lags on time that you want to have a environment where you are guided by linting rules. Integrations can be very painful, like eslint, prettier, jest. etc.
-This project solves the problem, it provides you a blueprint to directly start prototyping without loosing code quality due to linter integration, also writing test with jest works out of the box.
+This project solves the problem, it provides you a opinionated blueprint to directly start prototyping without loosing code quality, also writing test works out of the box.
 
 ## What's inside?
 
