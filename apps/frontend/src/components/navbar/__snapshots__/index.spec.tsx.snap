@@ -136,7 +136,7 @@ exports[`navbar NavbarContent should match snapshot 2`] = `
     </div>
     <div
       aria-hidden="true"
-      class="relative flex-shrink-0 overflow-hidden outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background group-data-[selected=true]:text-primary-foreground transition-background w-auto h-auto bg-transparent rounded-lg flex items-center justify-center group-data-[selected=true]:bg-transparent !text-default-500 pt-px px-0 mx-0"
+      class="relative flex-shrink-0 overflow-hidden outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background group-data-[selected=true]:text-primary-foreground rtl:ml-2 rtl:mr-[unset] transition-background w-auto h-auto bg-transparent rounded-lg flex items-center justify-center group-data-[selected=true]:bg-transparent !text-default-500 pt-px px-0 mx-0"
     >
       <svg
         aria-hidden="true"
@@ -180,7 +180,7 @@ exports[`navbar NavbarMenu should match snapshot 1`] = `
       data-slot="main-wrapper"
     >
       <div
-        class="relative w-full inline-flex tap-highlight-transparent flex-row items-center shadow-sm px-3 gap-3 data-[hover=true]:bg-default-200 group-data-[focus=true]:bg-default-100 h-unit-10 min-h-unit-10 rounded-medium transition-background motion-reduce:transition-none !duration-150 outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background bg-default-100"
+        class="relative w-full inline-flex tap-highlight-transparent flex-row items-center shadow-sm px-3 gap-3 data-[hover=true]:bg-default-200 group-data-[focus=true]:bg-default-100 h-10 min-h-10 rounded-medium transition-background motion-reduce:transition-none !duration-150 outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background bg-default-100"
         data-slot="input-wrapper"
         style="cursor: text;"
       >
@@ -221,11 +221,12 @@ exports[`navbar NavbarMenu should match snapshot 1`] = `
             data-slot="input"
             id="react-aria-:r7:"
             placeholder="Search..."
+            title=""
             type="search"
             value=""
           />
           <kbd
-            class="px-1.5 py-0.5 space-x-0.5 items-center font-sans font-normal text-center text-small shadow-small bg-default-100 text-foreground-600 rounded-small hidden lg:inline-block"
+            class="px-1.5 py-0.5 space-x-0.5 rtl:space-x-reverse items-center font-sans font-normal text-center text-small shadow-small bg-default-100 text-foreground-600 rounded-small hidden lg:inline-block"
           >
             <abbr
               class="no-underline"
