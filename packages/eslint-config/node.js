@@ -12,7 +12,7 @@ module.exports = {
     require.resolve('@vercel/style-guide/eslint/node'),
     'eslint-config-turbo',
   ],
-  plugins: ['only-warn', 'import'],
+  plugins: ['only-warn'],
   settings: {
     'import/resolver': {
       typescript: {
