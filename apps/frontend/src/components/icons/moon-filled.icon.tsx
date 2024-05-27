@@ -1,19 +1,19 @@
 import { type IconSvgProps } from './types';
 
-export const MoonFilledIcon = ({
+export const MoonFilledIcon: React.FC<IconSvgProps> = ({
   size = 24,
   width,
   height,
   ...props
-}: IconSvgProps) => {
+}) => {
   return (
     <svg
       aria-hidden="true"
       focusable="false"
-      height={height || size}
+      height={height ?? size}
       role="presentation"
       viewBox="0 0 24 24"
-      width={width || size}
+      width={width ?? size}
       {...props}
     >
       <path

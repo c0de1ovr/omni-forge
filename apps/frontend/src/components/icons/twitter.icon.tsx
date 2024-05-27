@@ -10,9 +10,9 @@ export const TwitterIcon: FC<IconSvgProps> = ({
 }) => {
   return (
     <svg
-      height={height || size}
+      height={height ?? size}
       viewBox="0 0 24 24"
-      width={width || size}
+      width={width ?? size}
       {...props}
     >
       <path

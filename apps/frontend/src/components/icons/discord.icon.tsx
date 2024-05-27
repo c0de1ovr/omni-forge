@@ -1,6 +1,8 @@
+import { type FC } from 'react';
+
 import { type IconSvgProps } from './types';
 
-export const DiscordIcon: React.FC<IconSvgProps> = ({
+export const DiscordIcon: FC<IconSvgProps> = ({
   size = 24,
   width,
   height,
@@ -8,9 +10,9 @@ export const DiscordIcon: React.FC<IconSvgProps> = ({
 }) => {
   return (
     <svg
-      height={height || size}
+      height={height ?? size}
       viewBox="0 0 24 24"
-      width={width || size}
+      width={width ?? size}
       {...props}
     >
       <path

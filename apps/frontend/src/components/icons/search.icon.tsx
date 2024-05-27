@@ -1,6 +1,8 @@
+import { type FC } from 'react';
+
 import { type IconSvgProps } from './types';
 
-export const SearchIcon = (props: IconSvgProps) => {
+export const SearchIcon: FC<IconSvgProps> = (props) => {
   return (
     <svg
       aria-hidden="true"
