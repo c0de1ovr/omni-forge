@@ -1,5 +1,5 @@
 /* eslint-disable react/function-component-definition */
-import { ReactNode } from 'react';
+import { type ReactNode } from 'react';
 
 export default function ExampleLayout({ children }: { children: ReactNode }) {
   return (

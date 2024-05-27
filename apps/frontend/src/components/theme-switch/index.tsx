@@ -1,11 +1,11 @@
 'use client';
 
-import { SwitchProps, useSwitch } from '@nextui-org/switch';
+import { type SwitchProps, useSwitch } from '@nextui-org/switch';
 import { useIsSSR } from '@react-aria/ssr';
 import { VisuallyHidden } from '@react-aria/visually-hidden';
 import clsx from 'clsx';
 import { useTheme } from 'next-themes';
-import { FC } from 'react';
+import { type FC } from 'react';
 import { SunFilledIcon, MoonFilledIcon } from '@/components/icons';
 
 export interface ThemeSwitchProps {

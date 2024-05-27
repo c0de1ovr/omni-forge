@@ -1,4 +1,4 @@
-import { IconSvgProps } from './types';
+import { type IconSvgProps } from './types';
 
 export const DiscordIcon: React.FC<IconSvgProps> = ({
   size = 24,

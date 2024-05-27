@@ -1,4 +1,4 @@
-import { IconSvgProps } from './types';
+import { type IconSvgProps } from './types';
 
 export const NextUILogo: React.FC<IconSvgProps> = (props) => {
   const { width, height = 40 } = props;

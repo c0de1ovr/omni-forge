@@ -2,8 +2,8 @@
 import '@/theme/styles/globals.css';
 import { Link } from '@nextui-org/link';
 import clsx from 'clsx';
-import { Metadata } from 'next';
-import { ReactNode } from 'react';
+import { type Metadata } from 'next';
+import { type ReactNode } from 'react';
 import { Navbar } from '@/components/navbar';
 import { fontSans } from '@/config/fonts';
 import { siteConfig } from '@/config/site';

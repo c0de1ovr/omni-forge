@@ -1,11 +1,11 @@
 import { title } from '@/components/primitives';
 
-type TodoResponseItem = {
+interface TodoResponseItem {
   userId: number;
   id: number;
   title: string;
   completed: boolean;
-};
+}
 
 export default async function AboutPage() {
   const todos = await fetch('https://jsonplaceholder.typicode.com/todos')

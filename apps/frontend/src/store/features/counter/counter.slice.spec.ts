@@ -2,10 +2,10 @@ import { createSlice } from '@reduxjs/toolkit';
 
 import { mapReducersToMockedActions } from '../test/utils';
 
-import { counterSlice, CounterState, selectCount } from './counter.slice';
+import { counterSlice, type CounterState, selectCount } from './counter.slice';
 
-var initialStateUnderTest: CounterState;
-var reducersUnderTest: Record<string, Function>;
+let initialStateUnderTest: CounterState;
+let reducersUnderTest: Record<string, Function>;
 
 jest.mock('@reduxjs/toolkit', () => ({
   ...jest.requireActual('@reduxjs/toolkit'),

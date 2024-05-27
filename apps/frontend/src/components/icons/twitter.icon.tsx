@@ -1,6 +1,6 @@
-import { FC } from 'react';
+import { type FC } from 'react';
 
-import { IconSvgProps } from './types';
+import { type IconSvgProps } from './types';
 
 export const TwitterIcon: FC<IconSvgProps> = ({
   size = 24,
