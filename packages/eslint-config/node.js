@@ -7,6 +7,8 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:prettier/recommended',
+    'eslint-config-prettier',
+    require.resolve('@vercel/style-guide/eslint/typescript'),
     require.resolve('@vercel/style-guide/eslint/node'),
     'eslint-config-turbo',
   ],

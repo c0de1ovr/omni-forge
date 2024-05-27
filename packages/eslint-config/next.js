@@ -9,6 +9,7 @@ module.exports = {
     'plugin:prettier/recommended',
     require.resolve('@vercel/style-guide/eslint/react'),
     'next/core-web-vitals',
+    require.resolve('@vercel/style-guide/eslint/typescript'),
     require.resolve('@vercel/style-guide/eslint/next'),
     'eslint-config-turbo',
   ],

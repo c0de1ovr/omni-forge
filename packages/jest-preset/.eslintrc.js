@@ -1,3 +1,8 @@
 module.exports = {
-  extends: ["@repo/eslint-config/node.js"],
+  root: true,
+  extends: ["@repo/eslint-config/node"],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    project: true,
+  },
 };
