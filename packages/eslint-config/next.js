@@ -8,7 +8,6 @@ module.exports = {
     'eslint:recommended',
     'plugin:prettier/recommended',
     require.resolve('@vercel/style-guide/eslint/react'),
-    'next/core-web-vitals',
     require.resolve('@vercel/style-guide/eslint/typescript'),
     require.resolve('@vercel/style-guide/eslint/next'),
     'eslint-config-turbo',
@@ -22,7 +21,7 @@ module.exports = {
     browser: true,
     jest: true,
   },
-  plugins: ['only-warn'],
+  plugins: ['only-warn', 'import'],
   settings: {
     'import/resolver': {
       typescript: {
