@@ -8,7 +8,7 @@ import { Navbar } from '@/components/navbar';
 import { fontSans } from '@/config/fonts';
 import { siteConfig } from '@/config/site';
 import { StoreProvider } from '@/store';
-import { ThemeProvider } from '@/theme/index';
+import { ThemeProvider } from '@/theme';
 
 export const metadata: Metadata = {
   title: {

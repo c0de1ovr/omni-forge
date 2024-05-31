@@ -1,15 +1,13 @@
 /* eslint-disable react/function-component-definition */
 'use client';
 
+import { type NextPage } from 'next';
 import { useEffect } from 'react';
 
-export default function Error({
-  error,
-  reset,
-}: {
+const Error: NextPage<{
   error: Error;
   reset: () => void;
-}) {
+}> = ({ error, reset }) => {
   useEffect(() => {
     // Log the error to an error reporting service
     console.error(error);
@@ -31,4 +29,6 @@ export default function Error({
       </button>
     </div>
   );
-}
+};
+
+export default Error;
