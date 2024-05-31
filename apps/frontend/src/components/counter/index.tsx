@@ -1,15 +1,22 @@
 'use client';
 
 import { Button } from '@nextui-org/button';
-import { useAppDispatch, useAppSelector } from '@/store';
-import { increment, selectCount } from '@/store/features/counter/counter.slice';
+import { type FC } from 'react';
+import { useAppStore } from '@/store';
 
-export const Counter = () => {
-  const count = useAppSelector(selectCount);
-  const dispatch = useAppDispatch();
+export const Counter: FC = () => {
+  const [count, increment] = useAppStore((state) => [
+    state.value,
+    state.increment,
+  ]);
 
   return (
-    <Button onPress={() => dispatch(increment())} radius="full">
+    <Button
+      onPress={() => {
+        increment();
+      }}
+      radius="full"
+    >
       Count is {count}
     </Button>
   );

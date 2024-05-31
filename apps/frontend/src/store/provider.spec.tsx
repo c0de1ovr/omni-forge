@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 
 import { makeStore } from './store';
 
-import { StoreProvider } from '.';
+import { AppStoreProvider } from '.';
 
 jest.mock('react-redux');
 jest.mock('./store');
@@ -16,7 +16,7 @@ describe('StoreProvider', () => {
   (makeStore as jest.Mock).mockReturnValue('mocked-store');
 
   it('should init redux provider with AppStore', () => {
-    const { getByTestId } = render(<StoreProvider>child-mock</StoreProvider>);
+    const { getByTestId } = render(<AppStoreProvider>child-mock</AppStoreProvider>);
 
     expect(makeStore).toHaveBeenCalledTimes(1);
     expect(Provider).toHaveBeenCalledTimes(1);

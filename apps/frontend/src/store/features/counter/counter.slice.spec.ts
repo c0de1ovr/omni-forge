@@ -2,7 +2,7 @@ import reducer, {
   increment,
   decrement,
   incrementByAmount,
-  type CounterState,
+  type CounterSlice,
   selectCount,
 } from './counter.slice';
 
@@ -14,7 +14,7 @@ describe('store slice counter', () => {
   });
 
   describe('reducers', () => {
-    let state: CounterState;
+    let state: CounterSlice;
     beforeEach(() => {
       state = {
         value: 5,
