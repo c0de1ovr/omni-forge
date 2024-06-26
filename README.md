@@ -27,7 +27,7 @@ This Turborepo has some additional tools already setup for you:
 - [Prettier](https://prettier.io/) for code formatting
 - [Jest](https://jestjs.io/) for unit testing
 - [NextUI](https://nextui.org/) for making beautiful websites from starting point
-- [Redux](https://redux.js.org/) for predictable state container in your frontend
+- [Zustand](https://docs.pmnd.rs/zustand/getting-started/introduction/) for predictable state container in your frontend
 
 ### Build (TDB)
 
