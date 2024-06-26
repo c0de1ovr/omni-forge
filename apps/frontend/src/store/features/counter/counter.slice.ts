@@ -21,7 +21,7 @@ export const createCounterSlice: StateCreator<CounterSlice> = (set) => ({
   },
   decrement: () => {
     set((state) => ({
-      value: state.value + 1,
+      value: state.value - 1,
     }));
   },
   incrementByAmount: (amount: number) => {
