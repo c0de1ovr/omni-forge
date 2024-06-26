@@ -1,0 +1,35 @@
+version: 2
+updates:
+  - package-ecosystem: "pnpm"
+    directories:
+      - "/"
+      - "/apps/frontend"
+      - "/packages/eslint-config"
+      - "/packages/jest-preset"
+      - "/packages/typescript-config"
+    schedule:
+      interval: "weekly"
+    labels:
+      - "pnpm"
+      - "dependencies"
+    open-pull-requests-limit: 10
+    commit-message:
+      prefix: "[DEPS] "
+    groups:
+      eslint:
+        patterns:
+          - "eslint*"
+          - "@typescript-eslint*"
+      testingLib:
+        patterns:
+          - "@testing-library*"
+      react:
+        patterns:
+          - "@types/react*"
+          - "react*"
+      jest:
+        patterns:
+          - "jest*"
+          - "ts-jest*"
+          - "@types/jest"
+      
