@@ -1,29 +1,48 @@
 import '@testing-library/jest-dom';
 import { render } from '@testing-library/react';
-import { Provider } from 'react-redux';
+import { type ReactNode } from 'react';
+import { type StoreApi } from 'zustand';
 
-import { makeStore } from './store';
+import { type AppStore } from './store';
 
-import { StoreProvider } from '.';
+import { AppStoreProvider } from '.';
 
-jest.mock('react-redux');
-jest.mock('./store');
+// eslint-disable-next-line @typescript-eslint/no-unsafe-return
+jest.mock('react', () => ({
+  ...jest.requireActual('react'),
+  createContext: jest.fn().mockImplementation(() => ({
+    Provider: ({
+      children,
+      value,
+    }: {
+      children: ReactNode;
+      value: StoreApi<AppStore>;
+    }) => {
+      const initialState = value.getInitialState();
+      return (
+        <div
+          data-testid="app-store-provider"
+          data-store={JSON.stringify(initialState)}
+        >
+          {children}
+        </div>
+      );
+    },
+  })),
+}));
 
 describe('StoreProvider', () => {
-  (Provider as jest.Mock).mockImplementation(({ children }) => (
-    <div data-testid="redux-provider-mock">{children}</div>
-  ));
-  (makeStore as jest.Mock).mockReturnValue('mocked-store');
-
-  it('should init redux provider with AppStore', () => {
-    const { getByTestId } = render(<StoreProvider>child-mock</StoreProvider>);
-
-    expect(makeStore).toHaveBeenCalledTimes(1);
-    expect(Provider).toHaveBeenCalledTimes(1);
-    expect(Provider).toHaveBeenCalledWith(
-      { children: 'child-mock', store: 'mocked-store' },
-      {},
+  it('should initialize zustand correctly', () => {
+    const { getByTestId } = render(
+      <AppStoreProvider>child-mock</AppStoreProvider>,
     );
-    expect(getByTestId('redux-provider-mock')).toBeInTheDocument();
+
+    expect(getByTestId('app-store-provider')).toBeInTheDocument();
+    expect(getByTestId('app-store-provider')).toHaveAttribute(
+      'data-store',
+      JSON.stringify({
+        value: 0,
+      }),
+    );
   });
 });

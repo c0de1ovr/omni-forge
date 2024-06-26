@@ -1,9 +1,15 @@
-import { useDispatch, useSelector, useStore } from 'react-redux';
-import type { TypedUseSelectorHook } from 'react-redux';
+import { useContext } from 'react';
+import { useStore } from 'zustand';
 
-import type { RootState, AppDispatch, AppStore } from './store';
+import { AppStoreContext } from './provider';
+import { type AppStore } from './store';
 
-// Use throughout your app instead of plain `useDispatch` and `useSelector`
-export const useAppDispatch: () => AppDispatch = useDispatch;
-export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;
-export const useAppStore: () => AppStore = useStore;
+export const useAppStore = <T>(selector: (store: AppStore) => T): T => {
+  const appStoreContext = useContext(AppStoreContext);
+
+  if (!appStoreContext) {
+    throw new Error(`appStoreContext must be use within AppStoreProvider`);
+  }
+
+  return useStore(appStoreContext, selector);
+};

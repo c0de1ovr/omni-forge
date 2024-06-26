@@ -7,7 +7,7 @@ import { type ReactNode } from 'react';
 import { Navbar } from '@/components/navbar';
 import { fontSans } from '@/config/fonts';
 import { siteConfig } from '@/config/site';
-import { StoreProvider } from '@/store';
+import { AppStoreProvider } from '@/store';
 import { ThemeProvider } from '@/theme';
 
 export const metadata: Metadata = {
@@ -42,11 +42,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         >
           <div className="relative flex flex-col h-screen">
             <Navbar />
-            <StoreProvider>
+            <AppStoreProvider>
               <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
                 {children}
               </main>
-            </StoreProvider>
+            </AppStoreProvider>
             <footer className="w-full flex items-center justify-center py-3">
               <Link
                 className="flex items-center gap-1 text-current"
