@@ -170,7 +170,7 @@ exports[`navbar NavbarMenu should match snapshot 1`] = `
   data-testid="NavbarMenu"
 >
   <div
-    class="group flex flex-col w-full group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)]"
+    class="group flex flex-col data-[hidden=true]:hidden w-full group relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)]"
     data-filled="true"
     data-filled-within="true"
     data-slot="base"
@@ -221,7 +221,6 @@ exports[`navbar NavbarMenu should match snapshot 1`] = `
             data-slot="input"
             id="react-aria-:r7:"
             placeholder="Search..."
-            title=""
             type="search"
             value=""
           />
