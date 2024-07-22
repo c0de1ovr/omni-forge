@@ -51,8 +51,8 @@ importers:
         specifier: 2.4.2
         version: 2.4.2(@types/react@18.3.3)(framer-motion@11.2.13)(react-dom@18.3.1)(react@18.3.1)(tailwindcss@3.4.4)
       '@react-aria/ssr':
-        specifier: 3.9.4
-        version: 3.9.4(react@18.3.1)
+        specifier: 3.9.5
+        version: 3.9.5(react@18.3.1)
       '@react-aria/visually-hidden':
         specifier: 3.8.12
         version: 3.8.12(react@18.3.1)
@@ -2735,7 +2735,7 @@ packages:
       '@internationalized/message': 3.1.4
       '@internationalized/number': 3.5.3
       '@internationalized/string': 3.2.3
-      '@react-aria/ssr': 3.9.4(react@18.3.1)
+      '@react-aria/ssr': 3.9.5(react@18.3.1)
       '@react-aria/utils': 3.24.1(react@18.3.1)
       '@react-types/shared': 3.23.1(react@18.3.1)
       '@swc/helpers': 0.5.11
@@ -2747,7 +2747,7 @@ packages:
     peerDependencies:
       react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
     dependencies:
-      '@react-aria/ssr': 3.9.4(react@18.3.1)
+      '@react-aria/ssr': 3.9.5(react@18.3.1)
       '@react-aria/utils': 3.24.1(react@18.3.1)
       '@react-types/shared': 3.23.1(react@18.3.1)
       '@swc/helpers': 0.5.11
@@ -2836,7 +2836,7 @@ packages:
       '@react-aria/focus': 3.17.1(react@18.3.1)
       '@react-aria/i18n': 3.11.1(react@18.3.1)
       '@react-aria/interactions': 3.21.3(react@18.3.1)
-      '@react-aria/ssr': 3.9.4(react@18.3.1)
+      '@react-aria/ssr': 3.9.5(react@18.3.1)
       '@react-aria/utils': 3.24.1(react@18.3.1)
       '@react-aria/visually-hidden': 3.8.12(react@18.3.1)
       '@react-stately/overlays': 3.6.7(react@18.3.1)
@@ -2935,6 +2935,16 @@ packages:
     engines: {node: '>= 12'}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    dependencies:
+      '@swc/helpers': 0.5.11
+      react: 18.3.1
+    dev: false
+
+  /@react-aria/ssr@3.9.5(react@18.3.1):
+    resolution: {integrity: sha512-xEwGKoysu+oXulibNUSkXf8itW0npHHTa6c4AyYeZIJyRoegeteYuFpZUBPtIDE8RfHdNsSmE1ssOkxRnwbkuQ==}
+    engines: {node: '>= 12'}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0
     dependencies:
       '@swc/helpers': 0.5.11
       react: 18.3.1
@@ -3047,7 +3057,7 @@ packages:
     peerDependencies:
       react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
     dependencies:
-      '@react-aria/ssr': 3.9.4(react@18.3.1)
+      '@react-aria/ssr': 3.9.5(react@18.3.1)
       '@react-stately/utils': 3.10.1(react@18.3.1)
       '@react-types/shared': 3.23.1(react@18.3.1)
       '@swc/helpers': 0.5.11
